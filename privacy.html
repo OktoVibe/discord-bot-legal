@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy Discord Template Bot.">
+  <title>Privacy Policy — Discord Template Bot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner"><a class="brand" href="./">Discord Template Bot</a><a class="back" href="./">←
+        Beranda</a></div>
+  </header>
+  <main class="wrap document">
+    <p class="eyebrow">KEBIJAKAN PRIVASI</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Terakhir diperbarui: 7 November 2026</p>
+    <p>Privacy Policy ini menjelaskan bagaimana <strong>Discord Template Bot</strong> (“Bot”) memproses informasi ketika
+      digunakan di server Discord. Pengelola Bot adalah <strong>[NAMA PENGELOLA]</strong> dan dapat dihubungi melalui
+      <strong>[EMAIL KONTAK]</strong>.
+    </p>
+
+    <h2>1. Informasi yang diproses</h2>
+    <p>Berdasarkan fungsi dan implementasi Bot saat ini, informasi berikut dapat diproses:</p>
+    <ul>
+      <li><strong>Server/Guild ID:</strong> digunakan untuk mengelompokkan dan menemukan template khusus milik
+        masing-masing server.</li>
+      <li><strong>Data template khusus:</strong> nama template, deskripsi, nama kategori, nama channel, jenis channel,
+        serta pilihan permission yang dimasukkan administrator. Data ini disimpan sebagai file JSON pada penyimpanan
+        lokal lingkungan tempat Bot dijalankan.</li>
+      <li><strong>User ID Discord:</strong> diproses sementara ketika administrator membuat draft role, agar hanya
+        pengguna yang memulai proses tersebut yang dapat melanjutkannya. Draft berada di memori dan kedaluwarsa setelah
+        sekitar 10 menit atau ketika Bot dimulai ulang.</li>
+      <li><strong>Username/tag Discord:</strong> dapat dicantumkan dalam alasan audit ketika Bot membuat role, sehingga
+        informasi tersebut dapat tercatat pada audit log server Discord.</li>
+      <li><strong>Informasi server, channel, dan role:</strong> Bot mengakses informasi yang diperlukan melalui Discord
+        API untuk memeriksa permission, membuat struktur channel, menghapus channel saat fitur Replace dikonfirmasi, dan
+        membuat role.</li>
+      <li><strong>Informasi teknis dan error:</strong> pesan error tertentu dapat ditulis ke console/log proses Bot
+        untuk membantu pemecahan masalah. Isi dan masa penyimpanan log bergantung pada konfigurasi penyedia hosting yang
+        digunakan pengelola.</li>
+    </ul>
+
+    <h2>2. Informasi yang tidak diminta oleh Bot</h2>
+    <p>Implementasi Bot saat ini hanya menggunakan Gateway Intent <code>Guilds</code>. Bot tidak meminta akses untuk
+      membaca isi pesan server, riwayat pesan, atau daftar anggota melalui privileged message/member intents. Jangan
+      mengirim data pribadi atau rahasia ke dalam nama maupun deskripsi template karena data tersebut dapat tersimpan
+      sebagai bagian dari template khusus.</p>
+
+    <h2>3. Tujuan penggunaan informasi</h2>
+    <ul>
+      <li>Menyediakan dan menjalankan perintah Bot.</li>
+      <li>Menyimpan, menampilkan, dan menghapus template khusus berdasarkan server.</li>
+      <li>Memastikan tindakan administratif hanya dilakukan oleh pengguna yang memiliki permission yang sesuai.</li>
+      <li>Membuat channel, kategori, dan role sesuai pilihan administrator.</li>
+      <li>Mendiagnosis kesalahan dan menjaga keamanan serta kestabilan Bot.</li>
+    </ul>
+
+    <h2>4. Penyimpanan dan masa retensi</h2>
+    <p>Template khusus disimpan dalam file JSON pada direktori data Bot, dipisahkan berdasarkan Server/Guild ID.
+      Template tetap tersimpan sampai dihapus menggunakan perintah <code>/template-delete</code> atau dihapus secara
+      manual dari penyimpanan tempat Bot dijalankan. Menghapus Bot dari server Discord tidak otomatis menghapus file
+      template dari hosting Bot.</p>
+    <p>Draft pembuatan role hanya disimpan sementara di memori selama maksimal sekitar 10 menit dan hilang ketika Bot
+      dimulai ulang. Log teknis dapat disimpan oleh lingkungan hosting sesuai pengaturan retensi penyedia tersebut.</p>
+
+    <h2>5. Pembagian informasi</h2>
+    <p>Pengelola tidak menjual informasi pengguna. Informasi diproses melalui Discord API agar Bot dapat berfungsi.
+      Informasi juga dapat diproses oleh penyedia hosting yang digunakan untuk menjalankan Bot, sesuai layanan dan
+      kebijakan penyedia tersebut. Discord dan penyedia hosting memiliki kebijakan privasi masing-masing.</p>
+    <p>Informasi dapat diungkapkan apabila diwajibkan oleh hukum atau diperlukan untuk menangani penyalahgunaan,
+      keamanan, maupun perlindungan hak yang sah.</p>
+
+    <h2>6. Keamanan</h2>
+    <p>Pengelola menerapkan langkah yang wajar sesuai kemampuan dan lingkungan hosting untuk melindungi data Bot. Namun,
+      tidak ada sistem penyimpanan atau transmisi yang dapat dijamin sepenuhnya aman. Pemilik server sebaiknya membatasi
+      permission Bot dan akses ke mesin/hosting tempat Bot berjalan.</p>
+
+    <h2>7. Hak dan pilihan administrator server</h2>
+    <ul>
+      <li>Administrator dapat menghapus template khusus dengan perintah <code>/template-delete</code>.</li>
+      <li>Administrator/pengelola Bot yang memiliki akses ke hosting dapat menghapus file template terkait secara
+        manual.</li>
+      <li>Administrator dapat menghapus Bot dari server untuk menghentikan pemrosesan baru di server tersebut.
+        Penghapusan Bot tidak dengan sendirinya menghapus data yang sudah tersimpan di hosting.</li>
+      <li>Untuk pertanyaan atau permintaan terkait data, hubungi pengelola melalui kontak di bawah.</li>
+    </ul>
+
+    <h2>8. Privasi anak</h2>
+    <p>Bot merupakan alat administrasi server dan tidak dirancang khusus untuk mengumpulkan informasi pribadi anak.
+      Pengelola server bertanggung jawab memastikan penggunaan Discord dan Bot sesuai batas usia serta ketentuan hukum
+      yang berlaku di wilayah masing-masing.</p>
+
+    <h2>9. Perubahan Privacy Policy</h2>
+    <p>Kebijakan ini dapat diperbarui apabila fitur, cara pemrosesan data, atau persyaratan hukum berubah. Versi terbaru
+      dan tanggal pembaruan akan tersedia pada halaman ini.</p>
+
+    <h2>10. Kontak</h2>
+    <p>Untuk pertanyaan, permintaan penghapusan data, atau masalah privasi, hubungi melalui
+      <strong>[animefans149200@gmail.com]</strong>.
+    </p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">© 2026 Discord Template Bot</div>
+  </footer>
+</body>
+
+</html>
